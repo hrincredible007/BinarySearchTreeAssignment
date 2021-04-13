@@ -8,6 +8,7 @@ public class Node<E extends Comparable<E>> implements myinterface.Node<E> {
     public Node(E data) {
         this.data = data;
         left = right  = null;
+
     }
 
     public E getData() {
