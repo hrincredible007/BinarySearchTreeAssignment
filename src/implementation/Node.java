@@ -22,16 +22,22 @@ public class Node<E extends Comparable<E>> implements myinterface.Node<E> {
         return left;
     }
 
-    public void setLeft(Node<E> left) {
-        this.left = left;
-    }
+
 
     public Node<E> getRight() {
         return right;
     }
 
-    public void setRight(Node<E> right) {
-        this.right = right;
+    @Override
+    public void setLeft(myinterface.Node left) {
+        this.left = (Node<E>) left;
     }
+
+    @Override
+    public void setRight(myinterface.Node right) {
+        this.right = (Node<E>) right;
+
+    }
+
 }
 
