@@ -60,6 +60,7 @@ public class MyBinarySearchTree<E extends Comparable<E>> implements BinarySearch
             System.out.println(node.getData());
             preOrder(node.getLeft());
             preOrder(node.getRight());
+
         }
 
 
